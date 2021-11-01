@@ -1,0 +1,109 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Game Container */
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameContainer {
+    height: 100%;
+    width: 75%;
+    border: 10px solid red;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+}
+
+.notGameContainer {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreContainer {
+    border: 10px solid green;
+    height: 50%;
+    width: 100%;
+}
+
+.rulesContainer {
+    border: 10px solid yellow;
+    height: 50%;
+    width: 100%;
+    color: #fff;
+}
+
+.rulesContainerHeading {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 45px;
+    font-weight: bold;
+    color: #047aed;
+}
+
+.rulesContainerText {
+    font-size: 20px;
+    padding: 15px 3px;
+    color: #ccc;
+}
+
+.scoreContainerHeading {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 45px;
+    font-weight: bold;
+    color: #fe5f1e;
+}
+
+#Score {
+    float: left;
+    font-size: 40px;
+    padding: 35px 20px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+#HighScore {
+    float: left;
+    font-size: 40px;
+    padding: 35px 20px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+/* Style Related To Snake Head And Body */
+
+.snakeFood {
+    background: rgb(43, 190, 43);
+    border-radius: 45%;
+    border: 5px solid #fff;
+}
+
+.snakeHead {
+    background: white;
+    border-radius: 45%;
+    border: 5px solid rgb(22, 126, 22);
+}
+
+.snakeBody{
+    background: #ccc;
+    border-radius: 45%;
+    border: 5px solid rgb(56, 177, 56);
+}
